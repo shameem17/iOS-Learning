@@ -62,11 +62,12 @@ var person = Person(name: "Bob", age: 32)
 person.display()
 ```
 
-```struct``` don't support OOP concepts.
+```struct```doesn't support OOP concepts.
 
 > **Note**
+> 
 > Struct is pass by value.
-> That is copying new instance from existing instance will not affect the initial instance
+> That is copying a new instance from an existing instance will not affect the initial instance
 > Example: var person1 = person. Here person1 and person are two different instances
 >
 
@@ -83,7 +84,7 @@ class Person{
 ```
 The ```UIView``` is an example of class for iOS. 
 
-A class with some properties needs to have a constructor (i.e. ```init``` function).
+A class with some properties must have a constructor (i.e. ```init``` function).
 
 ```swift
 class Person{
@@ -97,7 +98,7 @@ class Person{
 }
 ```
 
-Creating objects and instance of class:
+Creating objects and instances of class:
 
 ```swift
 var person = Person(name: "Alice", age: 30)
