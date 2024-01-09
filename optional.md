@@ -4,7 +4,7 @@
 
 Type safety is a cornerstone of the Swift language. As a result, variables and constants need to be initialized before they can be accessed. 
 
->  **Definition <br>
+>  **Definition** <br>
 >Optional is a representation of variable and constant that may or may not have a value. 
 >
 
@@ -14,14 +14,14 @@ var message: String
 print(message) //will be a cause of errer because message is not initialized
 ```
 
-There in most senarios we don't know if the variable will hold a value or not. If we fetch data from remote backend (i.e: API), for example, we don't know whether we are going to receive a valid response until the network request has completed. In such scenarios, we need the ablity to represent a different state, the absence of a value. And that is the concept of optionals.
+There in most senarios we don't know if the variable will hold a value or not. If we fetch data from remote backend (i.e: API), for example, we don't know whether we are going to receive a valid response until the network request has completed. In such scenarios, we need the ability to represent a different state, the absence of a value. And that is the concept of optionals.
 
 > **Benefits <br>
 >Optional helps to prevent runtime error
 >
 
 
-In the previous code snipt, we don't assign a value to the variable ```message``` which caused a error. We can declare the ```message``` variable as an optional variable such that it may or may not have a value.
+In the previous code snippet, we didn't assign a value to the variable ```message``` which caused an error. We can declare the ```message``` variable as an optional variable such that it may or may not have a value.
 
 ```swift
 var message: String? //optional variable
@@ -32,12 +32,12 @@ The ```message``` variable has no value initialized and it's an optional variabl
 
 ## Declaring Optionals
 
-To declare optional, we use a question mark(?). In the following example an optional of type ```String?``` or optional String is declared. Example:
+To declare it optional, we use a question mark(?). In the following example, an optional of type ```String?``` or optional String is declared. Example:
 
 ```swift
 var firstName: String?
 ```
-Now printing the ```firstName``` variable will print ```nil``` value. One important thing to remember that, here the firstname is a variable. So we can change the variable anytime. But if we declare the variable as a constant like ```let firstName: String?``` and don't initialize the value then we can never use it as we can't change the value of a constant. Using a optional value is in the example:
+Now printing the ```firstName``` variable will print ```nil``` value. One important thing to remember that, here the firstname is a variable. So we can change the variable anytime. But if we declare the variable as a constant like ```let firstName: String?``` and don't initialize the value then we can never use it as we can't change the value of a constant. Using an optional value is in the example:
 
 ```swift
 var firstName: String?
@@ -53,7 +53,7 @@ Because the value of an optional is wrapped in a container, we cannot access the
 ```swift
 let finalName: String = firstName
 ```
-This will create an error with message ```Value of optional type String? not unwrapped....```. So we need to unwrapped the optional value before use. There are several ways to unwrap optionals. They are:
+This will create an error with message ```Value of optional type String? not unwrapped....```. So we need to unwrap the optional value before use. There are several ways to unwrap optionals. They are:
 - Conditional unwrap
 - Forced unwrap
 - Optional Chaining
@@ -72,7 +72,7 @@ if let name = firstName{
 }
 ```
 
-```guard``` is used inside function because guard returns something. 
+```guard``` is used inside a function because guard returns something. 
 
 ```swift
 
@@ -117,7 +117,7 @@ print(my_country) //output: - Default Country
 
 ### 4. Forced Unwrapping
 
-When we are sure that the optional variable certainly contains a value then we can use forced unwrapping. Exclamatory ```(!)``` sign is used to forcly unwrap the optional variable.
+When we are sure that the optional variable certainly contains a value then we can use forced unwrapping. An exclamatory ```(!)``` sign is used to force unwrap the optional variable.
 
 ```swift
 
@@ -127,10 +127,10 @@ day = "Sunday"
 let today = day! //forced unwrap
 ```
 
-Forced unwrapping may cause runtime error if the optional variable doesn't contains any value i.e. contains ```nil``` value
+Forced unwrapping may cause runtime error if the optional variable doesn't contain any value i.e. contains ```nil``` value
 
-> **IMPORTANT :x: <br>
-> Optionals should never be forced unwrapped unless you are absolutely certain it contains a value
+> **IMPORTANT** :x: <br>
+> Optionals should never be forced unwrapped unless you are sure that it contain a value
 >
 
 
@@ -139,5 +139,5 @@ Forced unwrapping may cause runtime error if the optional variable doesn't conta
 
 ## References 
 
-<a href="https://developer.apple.com/documentation/swift/optional#Using-the-Nil-Coalescing-Operator"> Swift Documentation </a>  <a href="https://www.hackingwithswift.com/quick-start/beginners/how-to-handle-missing-data-with-optionals"> Hack With Swift</a>
+<a href="https://developer.apple.com/documentation/swift/optional#Using-the-Nil-Coalescing-Operator"> Swift Documentation </a>   <a href="https://www.hackingwithswift.com/quick-start/beginners/how-to-handle-missing-data-with-optionals"> Hack With Swift</a>
 
