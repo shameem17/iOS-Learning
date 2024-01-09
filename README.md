@@ -52,10 +52,10 @@ I shared my learning with you all. If anything seems to be wrong to you please h
 </tr>
 
 <td> 5 </td>
-<td> <a href="https://github.com/shameem17/iOS-Tutorial/blob/master/Weak_Strong.md" target="_blank"> Swift OOP - Class</a> </td>
+<td> <a href="https://github.com/shameem17/iOS-Learning/blob/master/Swift%20OOP-Class-Struct.md" target="_blank"> Swift OOP - Class</a> </td>
 
 <td> Class, Inheritance, Polimorphism, Access Modifiers </td>
-<td>  </td>
+<td> <a href="https://github.com/shameem17/Swift/tree/master/Class" target="_blank"> Code </a> </td>
 </tr>
 
 </table>
