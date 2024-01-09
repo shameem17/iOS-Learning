@@ -16,7 +16,7 @@ print(message) //will be a cause of errer because message is not initialized
 
 There in most senarios we don't know if the variable will hold a value or not. If we fetch data from remote backend (i.e: API), for example, we don't know whether we are going to receive a valid response until the network request has completed. In such scenarios, we need the ability to represent a different state, the absence of a value. And that is the concept of optionals.
 
-> **Benefits <br>
+> **Benefits** <br>
 >Optional helps to prevent runtime error
 >
 
@@ -139,5 +139,6 @@ Forced unwrapping may cause runtime error if the optional variable doesn't conta
 
 ## References 
 
-<a href="https://developer.apple.com/documentation/swift/optional#Using-the-Nil-Coalescing-Operator"> Swift Documentation </a>   <a href="https://www.hackingwithswift.com/quick-start/beginners/how-to-handle-missing-data-with-optionals"> Hack With Swift</a>
+<a href="https://developer.apple.com/documentation/swift/optional#Using-the-Nil-Coalescing-Operator"> Swift Documentation </a>  
+<a href="https://www.hackingwithswift.com/quick-start/beginners/how-to-handle-missing-data-with-optionals"> Hack With Swift</a>
 
