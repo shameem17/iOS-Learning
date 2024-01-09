@@ -64,10 +64,12 @@ person.display()
 
 ```struct```doesn't support OOP concepts.
 
-> **Note**
+> **Note** ⚠️
 > 
 > Struct is pass by value.
+> 
 > That is copying a new instance from an existing instance will not affect the initial instance
+> 
 > Example: var person1 = person. Here person1 and person are two different instances
 >
 
