@@ -51,5 +51,12 @@ I shared my learning with you all. If anything seems to be wrong to you please h
 <td>  </td>
 </tr>
 
+<td> 5 </td>
+<td> <a href="https://github.com/shameem17/iOS-Tutorial/blob/master/Weak_Strong.md" target="_blank"> Swift OOP - Class</a> </td>
+
+<td> Class, Inheritance, Polimorphism, Access Modifiers </td>
+<td>  </td>
+</tr>
+
 </table>
 </center>
