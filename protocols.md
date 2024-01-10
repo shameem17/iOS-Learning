@@ -1,13 +1,13 @@
 # :rocket: Protocols
 
-A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality. A blueprint doesn't build the building. It simply maps the overall design requirements that the builders need to follow. Protocols have a similar function in swift and can be passed around so that other struct or class or enum instances adopts ath property and method requirements defined by it. 
+A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality. A blueprint doesn't build the building. It simply maps the overall design requirements that the builders need to follow. Protocols have a similar function in Swift and can be passed around so that other struct or class or enum instances adopts the property and method requirements defined by it. 
 
-Protocols in Swift is similar to instance in Java. Protocols helps in multiple inheritance. 
+Protocols in Swift is similar to instance in Java. Protocols help in multiple inheritance. 
 
 
 ### :point_right: Creating Protocols
 
-Synatx:
+Syntax:
 
 ```swift
 protocol protocolName{
@@ -26,7 +26,7 @@ protocol Person{
 }
 ```
 
-A class or struct conforming the protocol must implements the properties and methods of the protocol. A class implementing the ```Person``` protocol is blew:
+A class or struct conforming the protocol must implement the properties and methods of the protocol. A class implementing the ```Person``` protocol is blew:
 ```swift
 class Student: Person{
 	let name: String
@@ -41,7 +41,7 @@ class Student: Person{
 }
 ```
 
-Creating instance of ```Student``` class.
+Creating an instance of ```Student``` class.
 
 ```swift
 var student = Student(name: "Rifat", age: 23)
@@ -153,7 +153,7 @@ class Student: StudentProtocol{
 ```
 
 > **IMPORTANT** <br>
-> class init should be required init if the protocol has initializer
+> Class init should be required init if the protocol has an initializer
 >
 
 Example:
@@ -162,10 +162,7 @@ Example:
 protocol Country{
 	var name: String {get set}
 	var capital: String {get set}
-	init(name: String, capital: String){
-		self.name = name
-		self.capital = capital
-	}
+	init(name: String, capital: String)
 }
 
 class Location: Country{
@@ -225,7 +222,7 @@ lightSwitch.toggle() //on
 
 #### :point_right: Extension
 
-A class can extend to another protocol to add extra behaviour. Example ```Student``` class can extend to another class ```Course```. 
+A class can extend to another protocol to add extra behaviours. Example ```Student``` class can extend to another class ```Course```. 
 
 ```swift
 protocol Course{
@@ -256,7 +253,7 @@ extension Student: Course{
 
 - is: checks whether a type conforms to a certain protocol
 - as?: downcast operator. it will return an optional of protocol type if the object confirms to the protocol
-- as!: downcast operator, similar to as? but forces downcast and if it fails then runtime error will occur
+- as!: downcast operator, similar to as? but forces downcast and if it fails then a runtime error will occur
 
 Example:
 ```swift
@@ -324,7 +321,7 @@ print(kidsBall < footBall) //comparison. uses raw value
 
 ## :point_right: Delegate
 
-Delegation is a design pattern that enables a class or structure to hand off (or delegate) some of its responsibilities to an instance of another type. This design pattern is implemented by defining a protocol that encapsulates the delegated responsibilities, such that a conforming type (known as a delegate) is guaranteed to provide the functionality that has been delegated. Delegation can be used to respond to a particular action, or to retrieve data from an external source without needing to know the underlying type of that source. Example:
+Delegation is a design pattern that enables a class or structure to hand off (or delegate) some of its responsibilities to an instance of another type. This design pattern is implemented by defining a protocol that encapsulates the delegated responsibilities, such that a conforming type (known as a delegate) is guaranteed to provide the functionality that has been delegated. Delegation can be used to respond to a particular action or to retrieve data from an external source without needing to know the underlying type of that source. Example:
 
 ```swift
 protocol Driver {
