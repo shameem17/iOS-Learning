@@ -58,5 +58,13 @@ I shared my learning with you all. If anything seems to be wrong to you please h
 <td> <a href="https://github.com/shameem17/Swift/tree/master/Class" target="_blank"> Code </a> </td>
 </tr>
 
+<td> 6 </td>
+<td> <a href="https://github.com/shameem17/iOS-Learning/blob/master/protocols.md" target="_blank"> Protocols & Delegate</a> </td>
+
+<td> Protocols, Multiple Inheritance, Delegate </td>
+<td> <a href="https://github.com/shameem17/Swift/tree/master/Protocols" target="_blank"> Code </a> </td>
+</tr>
+
+
 </table>
 </center>

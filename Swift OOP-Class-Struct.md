@@ -55,14 +55,14 @@ struct Person{
 }
 ```
 
-Accessing functions:
+:point_right: Accessing functions:
 
 ```swift
 var person = Person(name: "Bob", age: 32)
 person.display()
 ```
 
-```struct```doesn't support OOP concepts.
+```struct```doesn't support OOP concepts. Also ```struct``` is not supported in Objective - C.
 
 > **Note** ⚠️
 > 
@@ -72,6 +72,9 @@ person.display()
 > 
 > Example: var person1 = person. Here person1 and person are two different instances
 >
+> Any function which tends to alter any property should use mutable keyword before the function declaration
+>
+
 
 
 ## Class :fire:
@@ -124,7 +127,7 @@ class Person{
 }
 ```
 
-Accessing methods
+:point_right: Accessing methods
 
 ```swift 
 person.info()
@@ -140,7 +143,7 @@ person2.name = "Smith" //changing person2 name will also change the name of pers
 print(person1.name) //output : Smith
 ```
 
-### Inheritance
+### :point_right: Inheritance
 
 Subclass (Derived Class) inherits the properties and methods from superclass (Base Class)
 
@@ -159,8 +162,9 @@ var student = Student(name: "Student 1", age: 20)
 student.display() //accessing parent class method
 ```
 
+Swift don't support multiple inheritance. However multiple inheritance can be done by using protocols.
 
-### Polymorphism
+### :point_right: Polymorphism
 
 In subclass the properties and methods of superclass will act differently. Example:
 
@@ -228,7 +232,7 @@ print(cat.sound) //output: Cat Sound
 ```
 
 
-### Access Modifier
+### :point_right: Access Modifier
 
 There are five types of access modifiers in Swift. The are:
 
