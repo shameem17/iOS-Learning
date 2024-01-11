@@ -65,6 +65,14 @@ I shared my learning with you all. If anything seems to be wrong to you please h
 <td> <a href="https://github.com/shameem17/Swift/tree/master/Protocols" target="_blank"> Code </a> </td>
 </tr>
 
+<td> 7 </td>
+<td> <a href="https://github.com/shameem17/iOS-Learning/blob/master/functions.md" target="_blank"> Functions</a> </td>
+
+<td> Function, Paramenters, argument, nested functions, functions as type </td>
+<td> <a href="https://github.com/shameem17/Swift/tree/master/Function" target="_blank"> Code </a> </td>
+</tr>
+
+
 
 </table>
 </center>
