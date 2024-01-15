@@ -73,6 +73,13 @@ I shared my learning with you all. If anything seems to be wrong to you please h
 </tr>
 
 
+<td> 8 </td>
+<td> <a href="https://github.com/shameem17/iOS-Learning/blob/master/UserDefaults.md" target="_blank"> User Defaults</a> </td>
+
+<td> User Defaults in Swift </td>
+<td>  </td>
+</tr>
+
 
 </table>
 </center>
